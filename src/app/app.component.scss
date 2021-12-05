@@ -71,7 +71,7 @@ body {
         transform: rotateX(-30deg) rotateY(0deg);
     }
     100% {
-        transform: rotateX(-30deg) rotateY(360deg);
+        transform: rotateX(-30deg) rotateY(-360deg);
     }
 }
 
@@ -101,12 +101,17 @@ body {
     position: absolute;
     top: inherit;
     left: inherit;
-    width: inherit;
-    height: inherit;
+    width: 180px;
+    height: 180px;
+    color : #632907;
+    // background: #ec8208;
+
     // width: 32px;
     // height: 32px;
-    // background: #ec8208;
-    box-shadow: 32px 32px 64px #ec8208, -32px 32px 64px #ec8208, -32px -32px 64px #ec8208, 32px -32px 64px #ec8208;
-    transform: rotateX(90deg) translateX(32px) translateZ(-48px);
+    // background: radial-gradient(#c56a02, #ec8208, transparent, transparent);
+    // opacity: 0.8;
+    // border-radius: 50%;
+    box-shadow: 32px 32px 128px #ec8208, -32px 32px 128px #ec8208, -32px -32px 128px #ec8208, 32px -32px 128px #ec8208;
+    transform: rotateX(90deg) translateX(32px) translateZ(-64px);
 }
 
