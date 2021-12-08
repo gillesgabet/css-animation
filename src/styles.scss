@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+body {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #e9e9e9;
+    background-color: #323232;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Black Ops One', cursive;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #050505;
+}
+
+a {
+    color: #2FADE2;
+}
+a:hover{
+    color:rgb(201, 35, 201);
+}
+
+.div-container-between {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 4px 0 4px 0;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
