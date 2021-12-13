@@ -1,37 +1,39 @@
-<p>bubble-menu works!</p>
+<!-- <p>bubble-menu works!</p> -->
+<div class="div-container-left">
+    <h1>Gilles GABET : CSS ANIMATION</h1>
+</div>
 <div class="navigation">
     <ul>
-        <li class="active">
+        <li [routerLink]="['/index']">
             <a href="">
                 <span class="menu-icon"><mat-icon>home</mat-icon></span>
                 <span class="menu-text">Home</span>
             </a>
         </li>
         <li>
-            <a href="">
-                <span class="menu-icon"></span>
+            <a [routerLink]="['/css/cube']">
+                <span class="menu-icon"><mat-icon>description</mat-icon></span>
                 <span class="menu-text">Cube</span>
             </a>
         </li>
         <li>
             <a href="">
-                <span class="menu-icon"></span>
-                <span class="menu-text">Menu2</span>
+                <span class="menu-icon"><mat-icon>preview</mat-icon></span>
+                <span class="menu-text">Page</span>
             </a>
         </li>
         <li>
             <a href="">
-                <span class="menu-icon"></span>
-                <span class="menu-text">Menu3</span>
+                <span class="menu-icon"><mat-icon>account_circle</mat-icon></span>
+                <span class="menu-text">User</span>
             </a>
         </li>
         <li>
             <a href="">
-                <span class="menu-icon"></span>
+                <span class="menu-icon"><mat-icon>help_outline</mat-icon></span>
                 <span class="menu-text">Menu4</span>
             </a>
         </li>
     </ul>
 
 </div>
-<mat-icon>home</mat-icon>

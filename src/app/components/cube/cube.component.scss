@@ -1,3 +1,13 @@
+body {
+    margin: 0;
+    padding: 32px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #050505;
+}
+
 .horizon 
 {
     position: absolute;
@@ -6,6 +16,12 @@
     width: 100%;
     height: 100%;
     background: radial-gradient(#632907, #003200);
+}
+
+.div-cube {
+    width: 128px;
+    height: 128px;
+    padding: 32px;
 }
 
 .cube 
@@ -26,14 +42,19 @@
     width: inherit;
     height: inherit;
     transform-style: preserve-3d;
+    // text-align: center;
+    // vertical-align: middle;
 }
 .cube div span
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: inherit;
-    left: inherit;
-    width: inherit;
-    height: inherit;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
     background: linear-gradient(#632907,#c56a02,#c56a02, #632907);
     // rotate: 90deg;
     transform: rotateY(calc(90deg * var(--i))) translateX(0px) translateZ(32px); /* 300 / 2 = 150 */;
@@ -42,9 +63,10 @@
 .cube-text 
 {
     //
-    text-align: center;
+    font-family: 'Black Ops One', cursive !important;
+    //text-align: center;
     vertical-align: middle;
-    font-size: 54px;
+    font-size: 48px;
     color:white;
     font-weight: 900;
     z-index: 10;
@@ -67,8 +89,11 @@
     left: inherit;
     width: inherit;
     height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #151515;
-    transform: rotateX(90deg) translateX(32px) translateZ(32px);
+    transform: rotateX(90deg)  translateZ(32px);
     background: linear-gradient(#632907,#c56a02,#c56a02, #632907);
 }
 .cube-bottom
@@ -78,24 +103,29 @@
     left: inherit;
     width: inherit;
     height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #632907;
-    transform: rotateX(90deg) translateX(32px) translateZ(-32px);
+    transform: rotateX(90deg) translateZ(-32px);
 }
 .cube-shadow
 {
     position: absolute;
     top: inherit;
     left: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 180px;
     height: 180px;
-    color : #632907;
+    color : #3f3733;
     // background: #ec8208;
 
     // width: 32px;
     // height: 32px;
-    background: radial-gradient(circle at center, #c56a02, #ec8208, transparent);
+    background: radial-gradient(circle at center, #c56a02 16px, #ec8208 16px, transparent 32px);
     // opacity: 0.8;
-    border-radius: 50%;
-    box-shadow: 32px 32px 128px #ec8208, -32px 32px 128px #ec8208, -32px -32px 128px #ec8208, 32px -32px 128px #ec8208;
-    transform: rotateX(90deg) translateX(32px) translateZ(-64px);
+    // border-radius: 50%;
+    transform: rotateX(90deg) translateZ(-64px);
 }

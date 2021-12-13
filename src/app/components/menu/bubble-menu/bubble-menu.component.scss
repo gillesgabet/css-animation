@@ -1,7 +1,8 @@
 .navigation{ 
     position: relative;
-    width: 400px;
-    height: 60px;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
     border-radius: 30px 30px 30px 30px;
     background-color: #fff;
     display: flex;
@@ -36,13 +37,14 @@
     line-height: 65px;
     font-size: 1.5em;
     transition: 0.5s;
-    color:rgb(35, 101, 201)
+    color:rgb(35, 101, 201);
+    opacity: 0;
 }
 .navigation ul li.active a .icon {
     transform: translateY(0);
     color:rgb(35, 101, 201);
 }
-.navigation ul li.active a .text {
+.navigation ul li.inactive a .text {
     position: absolute;
     background: rgb(35, 101, 201);
     transform: translateY(0);
@@ -52,7 +54,6 @@
     font-size: 0.75em;
     letter-spacing: 0.05em;
     transition: 0.5s;
-    opacity: 0;
 }
 
 
