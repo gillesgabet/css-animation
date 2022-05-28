@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDivider } from '@angular/material/divider';
 
 @Component({
   selector: 'app-index',
