@@ -10,6 +10,7 @@ const routes: Routes = [
     { path: 'menu/bubble'       , component: BubbleMenuComponent, outlet: 'menu'},
     { path: 'cube'              , component: CubeComponent, outlet: 'content' },
   ]},
+   { path: 'cube'              , component: CubeComponent, outlet: 'content' },
   
   { path: 'index'                 , component: IndexComponent },
   { path: '**'                    , redirectTo: 'index', pathMatch: 'full' },
